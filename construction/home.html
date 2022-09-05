@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import stylesheet for font awesome cdn-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Responsive construction website</title>
+    <!-- custom stylesheet for the page-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section starts here -->
+    <header class="header">
+        <a href="#" class="logo">nette <span>gesellschaft</span></a>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+        
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="info-btn" class="fas fa-info-circle"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="Search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form> 
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <div class="flex">
+               <input type="checkbox" name="" id="remember-me">
+               <label for="remember-me">Remember me</label>
+               <a href="#">Forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>Don't have an account yet? <a href="#">Create one!</a></p>
+         </form>
+    </header>
+
+    <!--sliding contact-info in the navbar-->
+    <div class="contact-info">
+        <div id="close-contact-info" class="fas fa-times"></div>
+     
+        <div class="info">
+           <i class="fas fa-phone"></i>
+           <h3>phone number</h3>
+           <p>+251-234-567-890</p>
+           <p>+251-122-233-344</p>
+        </div>
+     
+        <div class="info">
+           <i class="fas fa-envelope"></i>
+           <h3>email address</h3>
+           <p>bk14drobs@gmail.com</p>
+           <p>bk21drobs@gmail.com</p>
+        </div>
+    
+        <div class="info">
+           <i class="fas fa-map-marker-alt"></i>
+           <h3>office address</h3>
+           <p>Addis Ababa, Ethiopia - 123468</p>
+        </div>
+     
+        <div class="share">
+           <a href="#" class="fab fa-facebook-f"></a>
+           <a href="#" class="fab fa-telegram"></a>
+           <a href="#" class="fab fa-twitter"></a>
+           <a href="#" class="fab fa-instagram"></a>
+           <a href="#" class="fab fa-linkedin"></a>
+        </div>
+     </div>
+    <!--sliding contact area ends-->
+
+    <!-- header section ends here -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+    
+        <div class="swiper-wrapper">
+    
+            <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+                <div class="content">
+                    <h3>we provide the best services</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                    <a href="#about" class="btn">learn more</a>
+                </div>
+            </section>
+    
+            <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+                <div class="content">
+                    <h3>making dreams come to life</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                    <a href="#about" class="btn">learn more</a>
+                </div>
+            </section>
+    
+            <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+                <div class="content">
+                    <h3>from concept to creation</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                    <a href="#about" class="btn">Learn more</a>
+                </div>
+            </section>
+    
+        </div>
+    
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- home section ends -->
+    <!-- custom JS file link-->
+    <script src="js/script.js"></script>
+</body>
+</html>
