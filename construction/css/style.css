@@ -314,7 +314,7 @@ header .login-form p a:hover {
   padding: 0;
 }
 .home .slide {
-  min-height: 60rem;
+  min-height: 70rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -328,11 +328,11 @@ header .login-form p a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, var(--yellow) -10%, transparent);
+  background: linear-gradient(90deg, var(--yellow), transparent 60%);
 }
 .home .slide:hover {
-  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(40deg) saturate(0.5);
-  transition: all 1.2s ease-in-out;
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(20deg) saturate(0.5);
+  transition: all 1.5s ease-out;
 }
 .home .slide .content {
   width: 50rem;
@@ -440,6 +440,125 @@ header .login-form p a:hover {
   box-shadow: var(--box-shadow);
   border: var(--border);
 }
+.services .box-container .box:hover img {
+  transform: translateY(-1rem);
+}
+.services .box-container .box img {
+  height: 7rem;
+}
+.services .box-container .box h3 {
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+
+.projects {
+  background: var(--black);
+}
+.projects .heading {
+  color: var(--white);
+}
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.projects .box-container .box {
+  cursor: initial;
+}
+.projects .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.projects .box-container .box .image {
+  height: 40rem;
+  overflow: hidden;
+}
+.projects .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s linear;
+}
+.projects .box-container .box .content {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--white);
+  justify-content: space-between;
+}
+.projects .box-container .box .content .info {
+  padding: 1rem 2rem;
+}
+.projects .box-container .box .content .info h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.projects .box-container .box .content .info p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+.projects .box-container .box .content i {
+  width: 7.5rem;
+  font-size: 3rem;
+  background: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 7.5rem;
+}
+
+.reviews .slide {
+  padding: 0 1.5rem;
+}
+.reviews .slide p {
+  padding: 1.5rem;
+  background: var(--light-bg);
+  position: relative;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+.reviews .slide p::before {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  background: var(--light-bg);
+  transform: rotate(45deg);
+}
+.reviews .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.reviews .slide .user img {
+  height: 7rem;
+  width: 7rem;
+}
+.reviews .slide .user h3 {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.reviews .slide .user .stars {
+  padding-top: 0.5rem;
+}
+.reviews .slide .user .stars i {
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
 
 @media (max-width: 1200px) {
   .header {
@@ -480,7 +599,7 @@ header .login-form p a:hover {
     margin: 2rem;
   }
 }
-@media (max-width: 765px) {
+@media (max-width: 760px) {
   .header .search-form {
     width: 90%;
   }

@@ -329,9 +329,8 @@ header{
 .home{
    padding: 0;
    
-   
    .slide{
-      min-height: 60rem;
+      min-height: 70rem;
       display: flex;
       align-items: center;
       position: relative;
@@ -344,12 +343,12 @@ header{
          top:0; left:0;
          height: 100%;
          width: 100%;
-         background: linear-gradient(90deg, var(--yellow) -10%, transparent);
+         background: linear-gradient(90deg, var(--yellow), transparent 60%);
       }
       
       &:hover{
-         filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(40deg) saturate(0.5);
-         transition: all 1.2s ease-in-out;
+         filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(20deg) saturate(0.5);
+         transition: all 1.5s ease-out;
       }
       
       .content{
@@ -448,6 +447,8 @@ header{
    }
 }
 
+//***styling the services section...................................services.................................
+
 .services{
    background: var(--light-bg);
 
@@ -460,15 +461,142 @@ header{
          background: var(--white);
          box-shadow: var(--box-shadow);
          border: var(--border);
+         
+         &:hover img{
+            transform: translateY(-1rem);
+         }
+
+         img{
+            height: 7rem;
+         }
+
+         h3{
+            @include titleText(1.6rem);
+            padding: 1rem 0;
+         }
+
+         p{
+            @include graphText(1.5rem);
+         }
+      }
+
+   }
+}
+
+//***styling the projects section...................................projects.................................
+
+.projects{
+   background: var(--black);
+
+   .heading{
+      color: var(--white)
+   }
+
+   .box-container{
+      @include grid(30rem);
+
+      .box{
+         cursor: initial;
+
+         &:hover .image img{
+            transform: scale(1.1);
+         }
+
+         .image{
+            height: 40rem;
+            overflow: hidden;
+
+            img{
+               height: 100%;
+               width: 100%;
+               object-fit: cover;
+               transition:.2s linear;
+            }
+         }
+
+         .content{
+            display: flex;
+            gap: .5rem;
+            background: var(--white);
+            justify-content: space-between;
+
+            .info{
+               padding: 1rem 2rem;
+
+               h3{
+                  @include titleText(1.7rem);
+               }
+
+               p{
+                  @include graphText(1.4rem);
+               }
+            }
+
+            i{
+               width: 7.5rem;
+               font-size: 3rem;
+               background: var(--yellow);
+               color: var(--white);
+               cursor: pointer;
+               text-align: center;
+               line-height: 7.5rem;
+            }
+         }
       }
    }
 }
 
+//***styling the reviews section...................................reviews.................................
 
+.reviews{
 
+   .slide{
+      padding: 0 1.5rem;
+      
+      p{
+         padding: 1.5rem;
+         background: var(--light-bg);
+         position: relative;
+         margin-bottom: 3rem;
+         border-radius: 1rem;
+         @include graphText(1.5rem);
 
+         &::before{
+            content: '';
+            position: absolute;
+            bottom: -1rem; left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            background: var(--light-bg);
+            transform: rotate(45deg);
+         }
+      }
 
+      .user{
+         display: flex;
+         align-items: center;
+         gap: 1.5rem;
 
+         img{
+            height: 7rem;
+            width: 7rem;
+         }
+
+         h3{
+            @include titleText(2rem);
+         }
+
+         .stars{
+            padding-top: .5rem;
+
+            i{
+               font-size: 1.4rem;
+               color: var(--yellow);
+            }
+         }
+      }
+   }
+}
 
 
 
@@ -523,7 +651,7 @@ header{
    }
 }
 
-@media (max-width:765px){
+@media (max-width:760px){
       .header{
 
          .search-form{

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!-- AOS css animation cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Light-js css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
 
     <title>Responsive construction website</title>
     <!-- custom stylesheet for the page-->
@@ -17,7 +19,7 @@
 </head>
 <body>
     <!-- header section starts here -->
-    <header class="header" data-aos="fade-left">
+    <header class="header">
         <a href="#" class="logo">firma <span>bK</span></a>
         
         <nav class="navbar">
@@ -99,64 +101,61 @@
     <section class="home" id="home" data-aos="zoom-out">
 
         <div class="swiper home-slider">
-    
-        <div class="swiper-wrapper">
-    
-            <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
-                <div class="content">
-                    <h3>we provide the best services</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-                    <a href="#about" class="btn">learn more</a>
-                </div>
-            </section>
-    
-            <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
-                <div class="content">
-                    <h3>making dreams come to life</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-                    <a href="#about" class="btn">learn more</a>
-                </div>
-            </section>
-    
-            <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
-                <div class="content">
-                    <h3>from concept to creation</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
-                    <a href="#about" class="btn">Learn more</a>
-                </div>
-            </section>
-    
+            <div class="swiper-wrapper" data-aos="fade-right">
+                <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+                    <div class="content" data-aos="fade-right">
+                        <h3>we provide the best services</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                        
+                        <a href="#about" class="btn">learn more</a>
+                    </div>
+                </section>
+        
+                <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>making dreams come to life</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                        <a href="#about" class="btn">learn more</a>
+                    </div>
+                </section>
+        
+                <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>from concept to creation</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+                        <a href="#about" class="btn">Learn more</a>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        
-    </div>
     
-</section>
+    </section>
 
-<!-- home section ends -->
+    <!-- home section ends -->
 
 
 
-<!-- about section starts  -->
+    <!-- about section starts  -->
 
-<section class="about" id="about" data-aos="fade-right">
-    
-    <h1 class="heading"> about us </h1>
-    
-    <div class="row">
-        <div class="video">
-            <image src="images/Rackspace_Office_Time_Lapse.gif"></image>
-        </div>
+    <section class="about" id="about" data-aos="fade-right">
         
-        <div class="content" data-aos="fade-left">
-            <h3>We will provide you the best work which you dreamt for!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et vero mollitia nemo corporis consequatur aspernatur distinctio dignissimos velit nam.</p>
-            <a href="#services" class="btn">read more</a>
+        <h1 class="heading"> about us </h1>
+        
+        <div class="row">
+            <div class="video">
+                <image src="images/Rackspace_Office_Time_Lapse.gif"></image>
+            </div>
+            
+            <div class="content" data-aos="fade-left">
+                <h3>We will provide you the best work which you dreamt for!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et vero mollitia nemo corporis consequatur aspernatur distinctio dignissimos velit nam.</p>
+                <a href="#services" class="btn">read more</a>
             </div>
         </div>
-        
+            
         <div class="box-container">
             <div class="box">
                 <h3>10+</h3>
@@ -182,6 +181,8 @@
     
     <!-- about section ends -->
     
+
+
     <!-- services section starts  -->
     
     <section class="services" id="services" data-aos="fade-up">
@@ -241,9 +242,278 @@
         
     <!-- services section ends -->
     
-    <!-- contact section starts  -->
     
-    <section class="contact" id="contact" data-aos="fade-right">
+    
+    <!-- projects section starts  -->
+
+    <section class="projects" id="projects" data-aos="fade-right">
+        <h1 class="heading"> our projects </h1>
+    
+        <div class="box-container">
+            <a href="images/project-1.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        
+            <a href="images/project-2.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        
+            <a href="images/project-3.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        
+            <a href="images/project-4.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        
+            <a href="images/project-5.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        
+            <a href="images/project-6.jpg" class="box">
+                <div class="image">
+                    <img src="images/project-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h3>dream home</h3>
+                        <p>construction, design</p>
+                    </div>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>    
+        </div>
+    
+    </section>
+    
+    <!-- projects section ends -->
+
+
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" data-aos="fade-up">
+
+        <h1 class="heading"> client reviews </h1>
+
+        <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde suscipit quis consequuntur, tempora corporis ex molestias dignissimos in cumque sunt ducimus voluptate inventore harum earum rem aperiam vel modi?</p>
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                    <h3>john doe</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- reviews section ends -->
+
+
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing" data-aos="fade-up">
+        <h1 class="heading"> our pricing </h1>
+    
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-home"></i>
+                <h3>basic plan</h3>
+                <div class="price"><span>$</span>250<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>
+        
+            <div class="box">
+                <i class="fas fa-building"></i>
+                <h3>premium plan</h3>
+                <div class="price"><span>$</span>650<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>
+        
+            <div class="box">
+                <i class="fas fa-city"></i>
+                <h3>ultimate plan</h3>
+                <div class="price"><span>$</span>1250<span>/mo</span></div>
+                <div class="list">
+                    <p>interior design</p>
+                    <p>refurbishment</p>
+                    <p>material supply</p>
+                    <p>maintenance</p>
+                    <p>24/7 support</p>
+                </div>
+                <a href="#" class="btn">choose plan</a>
+            </div>       
+        </div>
+    
+    </section>
+    
+    <!-- pricing section ends -->
+
+
+
+    <!-- contact section starts -->
+    
+    <section class="contact" id="contact">
         
         <h1 class="heading"> contact us </h1>
         
@@ -266,6 +536,12 @@
     <!-- contact section ends -->
 
 
+
+
+ 
+
+    <!-- Light-js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
     <!-- AOS js cdn import -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- swiper js cdn import -->
@@ -273,5 +549,8 @@
     <!-- custom JS file link-->
     <script src="js/script.js"></script>
 
+    <script>
+        lightGallery(document.querySelector('.projects .box-container'));
+    </script>
 </body>
 </html>

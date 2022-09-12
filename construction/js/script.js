@@ -40,13 +40,30 @@ window.onscroll = () => {
     contactInfo.classList.remove('active');
 }
 
-//Initialize Swiper
+//Initialize Swiper for home screen slider
 var swiper = new Swiper(".home-slider", {
     loop: true,
     grabCursor: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+});
+
+//Initialize Swiper for review slider
+var swiper = new Swiper(".reviews-slider", {
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        750: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        }
     },
 });
 
