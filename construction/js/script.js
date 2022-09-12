@@ -32,7 +32,7 @@ document.querySelector('#close-contact-info').onclick = () =>{
     contactInfo.classList.remove('active');
 }
 
-//hides the expanded menu when scrolled
+//hides the expanded menu, search form, contact info, login form... when scrolled
 window.onscroll = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');

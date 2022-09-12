@@ -96,6 +96,13 @@ section{
    padding: 5rem 10%;
 }
 
+.heading{
+   margin-bottom: 3rem;
+   @include titleText(3rem);
+   padding-left: 1rem;
+   border-left: 1rem solid var(--yellow);
+}
+
 @keyframes fadeIn{
    0%{
       top: 50%;
@@ -114,7 +121,7 @@ header{
    justify-content: space-between;
    z-index: 100;
    // background: var(--white);
-   background: linear-gradient(120deg, var(--white), transparent);
+   background: linear-gradient(180deg, var(--white) 75%, transparent);
 
    .logo{
       @include titleText(2.5rem);
@@ -321,6 +328,8 @@ header{
 
 .home{
    padding: 0;
+   
+   
    .slide{
       min-height: 60rem;
       display: flex;
@@ -328,16 +337,21 @@ header{
       position: relative;
       background-size: cover !important;
       background-position: center !important;
-
+      
       &::before{
          content: "";
          position: absolute;
          top:0; left:0;
          height: 100%;
          width: 100%;
-         background: linear-gradient(90deg, var(--yellow), transparent);
+         background: linear-gradient(90deg, var(--yellow) -10%, transparent);
       }
-
+      
+      &:hover{
+         filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(40deg) saturate(0.5);
+         transition: all 1.2s ease-in-out;
+      }
+      
       .content{
          width: 50rem;
          position: relative;
@@ -353,8 +367,36 @@ header{
          }
       }
    }
+
+   .swiper-button-prev,
+   .swiper-button-next{
+      top: initial;
+      bottom: 0;
+      left: initial;
+      right: 0;
+      height: 7rem;
+      width: 7rem;
+      line-height: 7rem;
+      font-size: 3rem;
+      background: var(--white);
+
+      &:hover{
+         background: var(--yellow);
+      }
+   }
+
+   .swiper-button-prev::after,
+   .swiper-button-next::after{
+      font-size: 2rem;
+      color: var(--black);
+   }
+
+   .swiper-button-prev{
+      right: 7.5rem;
+   }
 }
 
+//***styling the about section...................................about.................................
 
 
 
@@ -427,6 +469,18 @@ header{
 
          .login-form{
             width: 90%;
+         }
+      }
+
+      .home .slide{
+         justify-content: center;
+
+         .content {
+            text-align: center;
+
+            h3{
+               font-size: 3rem;
+            }
          }
       }
 }

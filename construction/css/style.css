@@ -55,6 +55,15 @@ section {
   padding: 5rem 10%;
 }
 
+.heading {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: var(--black);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 1rem solid var(--yellow);
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     top: 50%;
@@ -80,7 +89,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  background: linear-gradient(120deg, var(--white), transparent);
+  background: linear-gradient(180deg, var(--white) 75%, transparent);
 }
 header .logo {
   font-size: 2.5rem;
@@ -319,7 +328,11 @@ header .login-form p a:hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, var(--yellow), transparent);
+  background: linear-gradient(90deg, var(--yellow) -10%, transparent);
+}
+.home .slide:hover {
+  filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(40deg) saturate(0.5);
+  transition: all 1.2s ease-in-out;
 }
 .home .slide .content {
   width: 50rem;
@@ -336,6 +349,30 @@ header .login-form p a:hover {
   color: var(--light-color);
   line-height: 2;
   padding: 3rem 0;
+}
+.home .swiper-button-prev,
+.home .swiper-button-next {
+  top: initial;
+  bottom: 0;
+  left: initial;
+  right: 0;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
+  font-size: 3rem;
+  background: var(--white);
+}
+.home .swiper-button-prev:hover,
+.home .swiper-button-next:hover {
+  background: var(--yellow);
+}
+.home .swiper-button-prev::after,
+.home .swiper-button-next::after {
+  font-size: 2rem;
+  color: var(--black);
+}
+.home .swiper-button-prev {
+  right: 7.5rem;
 }
 
 @media (max-width: 1200px) {
@@ -383,6 +420,15 @@ header .login-form p a:hover {
   }
   .header .login-form {
     width: 90%;
+  }
+  .home .slide {
+    justify-content: center;
+  }
+  .home .slide .content {
+    text-align: center;
+  }
+  .home .slide .content h3 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 450px) {
