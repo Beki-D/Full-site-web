@@ -49,3 +49,9 @@ var swiper = new Swiper(".home-slider", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+//Initialize AOS animations
+AOS.init({
+    duration: 1200,
+  })
+  

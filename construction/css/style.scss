@@ -398,8 +398,71 @@ header{
 
 //***styling the about section...................................about.................................
 
+.about{
 
+   .row{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
 
+      .video{
+         flex: 1 1 41rem;
+
+         image{
+            width: 100%;
+         }
+      }
+      .content{
+         flex: 1 1 41rem;
+
+         h3{
+            @include titleText(3rem);
+         }
+
+         p{
+            @include graphText(1.5rem);
+            padding: 1rem 0;
+         }
+      }
+   }
+
+   .box-container{
+      margin-top: 3rem;
+      @include grid(16rem);
+      align-items: flex-start;
+
+      .box{
+         text-align: center;
+         background: var(--light-bg);
+         padding: 3rem 2rem;
+      }
+      h3{
+         @include titleText(4rem);
+      }
+
+      p{
+         @include graphText(1.5rem);
+         padding-top: .5rem;
+      }
+   }
+}
+
+.services{
+   background: var(--light-bg);
+
+   .box-container{
+      @include grid(25rem);
+
+      .box{
+         text-align: center;
+         padding: 3rem;
+         background: var(--white);
+         box-shadow: var(--box-shadow);
+         border: var(--border);
+      }
+   }
+}
 
 
 
