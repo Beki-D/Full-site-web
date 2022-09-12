@@ -35,7 +35,7 @@
 @mixin graphText($graphSize) {
    font-size: $graphSize;
    color: var(--light-color);
-   line-height: 1.5;
+   line-height: 2;
 }
 //styles template for the icons
 @mixin iconsBox() {
@@ -113,7 +113,8 @@ header{
    align-items: center;
    justify-content: space-between;
    z-index: 100;
-   background: var(--white);
+   // background: var(--white);
+   background: linear-gradient(120deg, var(--white), transparent);
 
    .logo{
       @include titleText(2.5rem);
@@ -334,15 +335,37 @@ header{
          top:0; left:0;
          height: 100%;
          width: 100%;
-         background: linear-gradient(90deg, var(--white), transparent);
+         background: linear-gradient(90deg, var(--yellow), transparent);
       }
 
       .content{
          width: 50rem;
          position: relative;
+         
+         h3{
+            @include titleText(5rem);
+            text-transform: uppercase;
+         }
+
+         p{
+            @include graphText(1.5rem);
+            padding: 3rem 0;
+         }
       }
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
