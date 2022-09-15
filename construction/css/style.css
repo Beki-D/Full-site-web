@@ -622,11 +622,11 @@ header .login-form p a:hover {
   gap: 3rem;
 }
 .contact .row .map {
-  flex: 1 1 41rem;
+  flex: 1 1 40rem;
   width: 100%;
 }
 .contact .row form {
-  flex: 1 1 41rem;
+  flex: 1 1 30rem;
   background: var(--light-bg);
   padding: 2rem;
 }

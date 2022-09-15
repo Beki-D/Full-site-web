@@ -67,6 +67,23 @@ var swiper = new Swiper(".reviews-slider", {
     },
 });
 
+//Initialize Swiper for blog slider
+var swiper = new Swiper(".blogs-slider", {
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        750: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        }
+    },
+});
+
 //Initialize AOS animations
 AOS.init({
     duration: 1200,
