@@ -707,7 +707,7 @@ header .login-form p a:hover {
 .footer {
   text-align: center;
   padding-bottom: 10rem;
-  background: var(--black);
+  background: var(--yellow);
 }
 .footer .links .btn {
   margin: 0.5rem;
@@ -718,9 +718,10 @@ header .login-form p a:hover {
   text-transform: capitalize;
   margin-top: 2rem;
   padding-top: 1rem;
+  color: var(--white);
 }
 .footer .credit span {
-  color: var(--yellow);
+  color: var(--black);
 }
 
 @media (max-width: 1200px) {

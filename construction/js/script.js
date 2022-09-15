@@ -84,6 +84,26 @@ var swiper = new Swiper(".blogs-slider", {
     },
 });
 
+//Initialize Swiper for logo slider
+var swiper = new Swiper(".logo-slider", {
+    loop: true,
+    grabCursor: true,
+    breakpoints: {
+        450: {
+            slidesPerView: 2,
+        },
+        650: {
+            slidesPerView: 3,
+        },
+        750: {
+            slidesPerView: 4,
+        },
+        1000: {
+            slidesPerView: 5,
+        }
+    },
+});
+
 //Initialize AOS animations
 AOS.init({
     duration: 1200,
